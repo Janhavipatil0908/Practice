@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+table,th,td{
+    border:4px solid black;
+    border-collapse: collapse;
+}
+</style>
+ 
+
+<body>
+   <h1>ShopEase</h1>
+   <img height="300" src="data:image/png;base64,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"alt="">
+   <a href="https://www.shopeaseapp.com/">This is will open shopease</a>
+   <div style="display : flex;"> 
+   <div style="margin-left:20px">
+        <h3>Information</h3>
+        <p>A smart solution to everyday shopping, seamlessly integrated into one app!<br>ShopEase simplifies organizing shopping lists with real-time sharing, inventory tracking, and receipt attachments.
+        <br>
+        </p>
+         Get started with ShopEase :
+<br>Step 1: Sign up with your mobile number
+- Download & install the app from Play Store or App Store.
+- Provide your mobile number.
+- Enter the OTP to successfully sign in to the app.
+<br>Step 2: Create the shopping list
+- Navigate to the checklist.
+- Add items using the scan option or the add option.
+- Link the items to a specific shop.
+- Check off the items as you purchase them.
+- Complete your shopping.
+<br>Step 3: Upload the receipt
+- Upload the receipt when the purchase is completed or do it later from the history.
+- Click on the receipt image placeholder.
+- Upload from the gallery or take a picture.
+- Successfully attach the invoice.
+
+
+</p> 
+        
+   </div>
+   </div>
+   
+    <table>
+        <tr>
+           <th>ID</th>
+           <th>Name</th>
+           <th>Price</th>
+           </tr>
+        <tr>
+            <td>1</td>
+            <td>Mouse</td>
+            <td>rs.10</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Keyword</td>
+            <td>rs.20</td>
+        </tr>
+    </table>
+   <ol>
+    <li> 
+    <ul>
+       <li>Fashion</li>
+       <li>Groceries</li>
+       <li>Electronics</li>
+    </ul>
+    </li>
+    <li>
+        Add to cart
+    <ul>
+        <li>list option</li>
+        <li>Apply coupon</li>
+    </ul>
+    </li>
+    Place order
+    <ul>
+        <li>Choose Payment</li>
+        <li>Delivery Track</li>
+    </ul>
+    </li>
+   </ol>
+   
+
+    
+
+
+</body>
+</html>
